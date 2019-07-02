@@ -1,0 +1,27 @@
+extends ../structure
+
+block head
+    - var title = "Ozero";
+
+block main
+    main.main#main
+        .main_widgets
+            .main_media-icon(data-count="0")
+                a.icon(href="#")
+                    img.icon_img(src="img/wishlist.png" alt="wishlist")
+            .main_media-icon(data-count="0")
+                a.icon.icon(href="#")
+                    img.icon_img(src="img/cart.png" alt="cart")
+        .main_catalogue
+            include ../bem/category/category
+        .main_brands._scrollUp
+            include ../bem/brand/brand
+        .main_promo._promoSlider
+            include ../bem/promo/promo
+        .main_hits
+            include ../bem/product/product
+        .main_reviews
+            include ../bem/review/review
+        .main_scroll._scroll
+            a.main_scroll-icon(href="#main")
+                img(src="img/scroll.png")

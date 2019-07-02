@@ -1,0 +1,2 @@
+[5/18/2019, 4:49:20 PM] layer "+38 093-555-555": Expected Either a default asset specification or a layer asset specification but "+" found.
+[5/18/2019, 4:49:20 PM] layer "ozero.info@gmail.com": Unsupported extension: com

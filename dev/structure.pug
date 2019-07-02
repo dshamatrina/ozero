@@ -1,0 +1,76 @@
+doctype html
+html(lang='en')
+  block head
+  head
+    meta(charset='UTF-8')
+    title #{title}
+    block style
+        link(rel='stylesheet' href='dev/style/normalize-local.css')
+        link(rel='stylesheet' href='dest/style.css')
+        link(rel='stylesheet' href='libraries/grid-layout.css')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic')
+        link(rel="stylesheet" type="text/css" href="libraries/slick-slider/slick/slick.css")
+        link(rel="stylesheet" type="text/css" href="libraries/slick-slider/slick/slick-theme.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(type="text/javascript" src="libraries/slick-slider/slick/slick.min.js")
+  body
+
+    block header
+        header.header
+            .header_wrapper
+                .header_logo
+                    img.logo(src="img/logo.png" alt="Ozero")
+                .header_menu
+                    .header_nav
+                        .header_nav-item.header_nav-item__active
+                            a.h4.h4__lighter(href="#") Головна
+                        .header_nav-item
+                            a.h4.h4__lighter(href="#") Про нас
+                        .header_nav-item.header_nav-dropdown
+                            a.h4.h4__lighter(href="#") Магазин
+                        .header_nav-dropdown-menu
+                            a.p.p__larger.header_nav-dropdown-item(href="#") Для кухні
+                            a.p.p__larger.header_nav-dropdown-item(href="#") Для ванної
+                            a.p.p__larger.header_nav-dropdown-item(href="#") Гігієна
+                            a.p.p__larger.header_nav-dropdown-item(href="#") Зберігання
+                            a.p.p__larger.header_nav-dropdown-item(href="#") Книги
+                        .header_nav-item
+                            a.h4.h4__lighter(href="#") Контакти
+                        .header_search
+                            input.header_search-field
+                            .header_search-icon
+                                a.icon(href="#")
+                                    img.icon__img(src="img/search.png" alt="search")
+                .header_media
+                    .header_media-icon
+                        a.icon(href="#")
+                            img.icon__img(src="img/fb.png" alt="facebook")
+                    .header_media-icon
+                        a.icon(href="#")
+                            img.icon__img(src="img/inst.png" alt="instagram")
+
+    block main
+
+    block footer
+        footer.footer
+            .footer_contacts
+                .footer_contact
+                    .footer_contact-icon
+                        img.icon_img(src="img/phone.png" alt="phone")
+                    p.p.p__faded +38 093-555-555
+                .footer_contact
+                    .footer_contact-icon
+                        img.icon_img(src="img/email.png" alt="email")
+                    p.p.p__faded ozero.info@gmail.com
+                .footer_contact
+                    .footer_contact-icon
+                        img.icon_img(src="img/location.png" alt="location")
+                    p.p.p__faded Київ, вул. Гарматна 6
+            .footer_media
+                .footer_media-icon
+                    a.icon(href="#")
+                        img.icon_img(src="img/fb.png" alt="facebook")
+                .footer_media-icon
+                    a.icon(href="#")
+                        img.icon_img(src="img/inst.png" alt="instagram")
+    script(async defer src="dest/script.js")

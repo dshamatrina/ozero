@@ -1,0 +1,32 @@
+.footer {
+    clear: both;
+    padding: 30px 120px;
+    margin-left: 255px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &::before {
+        content: '';
+        width: calc(100% - 240px);
+        height: 1px;
+        background-color: #939393;
+        position: absolute;
+        top: -10px;
+    }
+    &_contacts {
+        display: flex;
+    }
+    &_contact {
+        display: flex;
+        margin-right: 60px;
+    }
+    &_contact-icon {
+        margin-right: 15px;
+    }
+    &_media {
+        display: flex;
+    }
+    &_media-icon:not(:first-of-type) {
+        margin-left: 60px;
+    }
+}

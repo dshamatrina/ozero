@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'MicrosoftSansSerif';
+    src: url('../dev/style/fonts/MicrosoftSansSerif.woff2') format('woff2'),
+        url('../dev/style/fonts/MicrosoftSansSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

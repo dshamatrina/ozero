@@ -1,0 +1,32 @@
+.product {
+    &__discount {
+        position: relative;
+        &::before {
+            content: attr(data-discount);
+            position: absolute;
+            top: 15px;
+            left: 0;
+            background-color: #97b49b;
+            width: 70px;
+            height: 20px;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'MicrosoftSansSerif', sans-serif;
+        }
+    }
+    &_link {
+        display: block;
+    }
+    &_category {
+        margin: 10px 0;
+    }
+    &_name {
+        margin: 10px 0;
+    }
+    &_price {
+        display: flex;
+        align-items: baseline;
+        margin: 15px 0;
+    }
+}
